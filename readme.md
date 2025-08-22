@@ -1,6 +1,6 @@
 \# E-commerce Application
 
-This is a full-stack e-commerce application built with .NET Core, Angular, and other related technologies. The application showcases a standard e-commerce platform with product listings, a shopping basket, and user authentication.
+This is a full-stack e-commerce application built with .NET Core, Angular, and other related technologies. The application showcases a standard platform with product listings,.. and user authentication.
 
 ## Technologies Used
 
@@ -12,7 +12,7 @@ This is a full-stack e-commerce application built with .NET Core, Angular, and o
 *   **SQLite**: Used as the database for both the main application and identity management.
 *   **JWT Authentication**: For securing the API.
 *   **Kafka**: For messaging between services.
-*   **Redis**: For managing the shopping basket.
+*   **Redis**: For managing the cache.
 *   **AutoMapper**: For object-to-object mapping.
 
 ### Frontend
@@ -84,14 +84,5 @@ The solution is divided into four main projects:
 *   **`Client`**: The Angular frontend application.
 *   **`Core`**: A class library containing the core entities, interfaces, and business logic.
 *   **`Infrastructure`**: A class library containing the data access logic, repositories, and other infrastructure concerns.
-
-## API Endpoints
-
-The API provides the following main endpoints:
-
-*   `api/products`: For getting products.
-*   `api/basket`: For managing the shopping basket.
-*   `api/account`: For user registration and login.
-*   `api/orders`: For managing orders (via Kafka).
 
 For a full list of endpoints, you can explore the Swagger documentation available at `https://localhost:5001/swagger`.
